@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "Kanit-Regular";
+    src: url("../fonts/Kanit-Regular.ttf"); format("truetype");
+}
+
+body {
+    font-family: Kanit-Regular;
+}
+
+:root {
+    --height_banner_vertical: calc((100vh - 130px) * 0.5);
+    --height_banner_horizontal: calc((100vh - 150px) * 0.25);
+
+    --width_banner_vertical: calc((100vw - 330px) * 0.25);
+    --width_banner_horizontal: calc((100vw - 290px) * 0.5);
+}
 .left__list {
     position: absolute;
 }
@@ -55,7 +71,7 @@
     display: flex;
     position: absolute;
     right: 0;
-    padding-right: 50px;
+    padding-right: 20px;
 }
 .container2__search, .container2__search_logo, .container2__basket, .container2__person {
     padding-top: 20px;
@@ -69,6 +85,7 @@
 }
 .container2__search input {
     color: darkgrey;
+    border-radius: 9px;
 }
 .c1 {
     display: flex;
@@ -83,55 +100,85 @@
 }
 .banner__horizontal_1 {
     background-image: url(../assets/images/1.png);
-    width: 539px;
-    height: 180px;
+    width: var(--width_banner_horizontal);
+    height: var(--height_banner_horizontal);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
 }
 .bh1_text {
-    text-align: center;
-    padding-top: 13%;
+    justify-content: center;
+    align-items: center
 }
 .banner__horizontal_2 {
-    width: 539px;
-    height: 180px;
+    width: var(--width_banner_horizontal);
+    height: var(--height_banner_horizontal);
     background-image: url(../assets/images/2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9px;
 }
 .banner__vertical_1 {
-    width: 259px;
-    height: 380px;
+    width: var(--width_banner_vertical);
+    height: var(--height_banner_vertical);
     background-image: url(../assets/images/3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9px;
 }
 .banner__vertical_2 {
-    width: 259px;
-    height: 380px;
+    width: var(--width_banner_vertical);
+    height: var(--height_banner_vertical);
     background-image: url(../assets/images/4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9px;
 }
 .banner__vertical_3 {
-    width: 259px;
-    height: 380px;
+    width: var(--width_banner_vertical);
+    height: var(--height_banner_vertical);
     background-image: url(../assets/images/5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9px;
 }
 .banner__vertical_4 {
-    width: 259px;
-    height: 380px;
+    width: var(--width_banner_vertical);
+    height: var(--height_banner_vertical);
     background-image: url(../assets/images/6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9px;
 }
 .banner__horizontal_3 {
-    width: 539px;
-    height: 180px;
+    width: var(--width_banner_horizontal);
+    height: var(--height_banner_horizontal);
     background-image: url(../assets/images/7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9px;
 }
 .banner__horizontal_4 {
-    width: 539px;
-    height: 180px;
+    width: var(--width_banner_horizontal);
+    height: var(--height_banner_horizontal);
     background-image: url(../assets/images/8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9px;
 }
 .part_1, .part_2 {
-    padding: 50px 50px 0 25px;
     display: flex;
-
-}
-.part_2 {
-    padding-top: 0;
 }
 .box__vertical {
     display: flex;
@@ -140,6 +187,21 @@
 .banner__horizontal_3, .banner__horizontal_4{
     margin: 10px;
 }
-.banner__horizontal_2, .banner__horizontal_4 {
-    margin-top: 19px;
+.like {
+    float: right;
+    padding: 15px 15px;
 }
+.banner__horizontal_3, .banner__horizontal_4 {
+    display: flex;
+    align-items: center;
+}
+.bh3_text h2 {
+    color: blue;
+}
+.bh4_text h2 {
+    color: red;
+}
+.bh4_text, .bh3_text {
+    padding-left: 15px;
+}
+
